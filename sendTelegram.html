@@ -1,0 +1,43 @@
+
+<!--// Telegram Bot API settings-->
+<!--$botToken = "7577871893:AAHVSOSVy8mwQ9gk9zfJRgK0SdN1yYMjDyo";-->
+<!--$chatId = "1583712881"; // your Telegram user ID-->
+
+<!--// Read incoming POST data-->
+<!--$data = json_decode(file_get_contents("php://input"), true);-->
+<!--$message = $data['message'] ?? '';-->
+
+<!--if ($message) {-->
+<!--    $url = "https://api.telegram.org/bot$botToken/sendMessage";-->
+
+<!--    $postFields = [-->
+<!--        'chat_id' => $chatId,-->
+<!--        'text' => $message,-->
+<!--        'parse_mode' => 'HTML'-->
+<!--    ];-->
+
+<!--    // Initialize cURL-->
+<!--    $ch = curl_init();-->
+
+<!--    curl_setopt_array($ch, [-->
+<!--        CURLOPT_URL => $url,-->
+<!--        CURLOPT_POST => true,-->
+<!--        CURLOPT_RETURNTRANSFER => true,-->
+<!--        CURLOPT_POSTFIELDS => $postFields-->
+<!--    ]);-->
+
+<!--    $response = curl_exec($ch);-->
+<!--    $curlError = curl_error($ch);-->
+<!--    curl_close($ch);-->
+
+<!--    // Log response or error-->
+<!--    file_put_contents('telegram_log.txt', "Response: $response\nError: $curlError\n", FILE_APPEND);-->
+<!--}-->
+
+
+
+
+
+
+
+
